@@ -47,9 +47,6 @@ public class JavaChallenge3 {
     
     */
 
-    //need to implement if the value is a max root, return -1|Edit--implemented
-    //need to implement if value is > max root, return something | Edit--Implemented
-
     public static int FindParent(int maxHeight, int value) {
         
         if (value >= Math.pow(2,maxHeight) - 1){
@@ -62,7 +59,7 @@ public class JavaChallenge3 {
         int currentRootChildLeft = currentRootChildRight / 2;
         int delta = 0;
 
-        //reducing Current tree to left most subtree
+        //reduce current tree to the left subtree and
         //accrue delta to compensate for tree reduction
         while (value != currentRootChildRight && value != currentRootChildLeft) {
             delta = delta + currentRootChildLeft;
