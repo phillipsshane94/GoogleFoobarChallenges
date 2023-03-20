@@ -13,7 +13,7 @@ Solution
 
 -Write function solution(xs)
     -takes list(array) of integers
-    -integers represent power output levels of each panel in array
+    -integers represent power output levels of solar panels in array
     -returns max product subset of those numbers (non-empty)
         -iterate through array, get product of all numbers in array
         -ignore 0's
